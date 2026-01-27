@@ -2,4 +2,4 @@
 **/.expo/
 **/.DS_Store
 **/*.log
-server/fitness.sqlite
+server/fitness.sqlite*
