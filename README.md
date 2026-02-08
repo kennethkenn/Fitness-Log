@@ -3,12 +3,15 @@
 Modern workout tracker built with React Native (Expo) and a GraphQL backend backed by SQLite. Log sessions, track history, and visualize progress in a sleek, dark UI.
 
 ## Screenshots
-![Home](images/home.jpg)
-![Workout](images/workout.jpg)
-![History](images/history.jpg)
-![Analytics](images/analytics.jpg)
+
+| Home | Workout |
+| --- | --- |
+| <img src="images/home.jpg" width="220" /> | <img src="images/workout.jpg" width="220" /> |
+| History | Analytics |
+| <img src="images/history.jpg" width="220" /> | <img src="images/analytics.jpg" width="220" /> |
 
 ## Features
+
 - **Workout Logger**: Create sessions, add sets, reps, and weights.
 - **Exercise Manager**: Add, edit, and delete exercises.
 - **Rest Timer**: Quick rest timer during workouts.
@@ -16,6 +19,7 @@ Modern workout tracker built with React Native (Expo) and a GraphQL backend back
 - **Analytics**: Clean progress chart with quick stats.
 
 ## Tech Stack
+
 - **Mobile**: React Native (Expo), React Navigation, Apollo Client
 - **Backend**: Node.js, Apollo Server, SQLite (`better-sqlite3`)
 - **Charts**: Victory Native
@@ -24,14 +28,17 @@ Modern workout tracker built with React Native (Expo) and a GraphQL backend back
 ## Getting Started
 
 ### 1) Backend
+
 ```bash
 cd server
 npm install
 node index.js
 ```
+
 Server runs at `http://localhost:4000` by default.
 
 ### 2) Mobile App
+
 ```bash
 cd mobile
 npm install
@@ -39,6 +46,7 @@ npx expo start
 ```
 
 ## Physical Device Setup
+
 If you’re running on a physical phone, update the API URL in:
 `mobile/src/config.js`
 
@@ -47,6 +55,7 @@ export const API_URL = 'http://YOUR_LAN_IP:4000';
 ```
 
 ## Project Structure
+
 - `server` — GraphQL API + SQLite persistence
 - `mobile` — Expo app
   - `src/api` — Apollo Client config
@@ -56,5 +65,6 @@ export const API_URL = 'http://YOUR_LAN_IP:4000';
 - `images` — README screenshots
 
 ## Notes
+
 - The SQLite database is created at `server/fitness.sqlite`.
 - If charts or API calls fail on device, confirm the phone and computer are on the same Wi‑Fi network.
